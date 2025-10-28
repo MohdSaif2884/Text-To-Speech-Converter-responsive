@@ -1,0 +1,110 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg, #1C1C24, #121218); 
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    background: rgba(30, 30, 40, 0.7); 
+    padding: 40px;
+    border-radius: 25px;
+    backdrop-filter: blur(12px); 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
+    border: 1px solid rgba(255, 255, 255, 0.05); 
+}
+
+.hero h1 {
+    font-size: 42px;
+    font-weight: 600;
+    color: #E0C1A6; 
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #DAA520; 
+}
+
+textarea {
+    width: 100%;
+    height: 220px;
+    background: #18181E; 
+    color: #F0F0F0; 
+    border: 1px solid #333; 
+    outline: none;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 16px;
+    resize: none;
+    margin-bottom: 30px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5); 
+}
+
+textarea::placeholder {
+    color: #888; 
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+select {
+    flex: 1;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    font-size: 16px;
+    background-color: #E0C1A6; 
+    color: #121218; 
+    appearance: none;
+    background-image: url('/images/dropdown_light.png'); 
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: calc(100% - 20px) center;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(224, 193, 166, 0.3); 
+}
+
+button {
+    margin-left: 20px;
+    background: #DAA520; 
+    color: #121218; 
+    border: none;
+    outline: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(218, 165, 32, 0.5); 
+}
+
+button img {
+    width: 18px;
+    margin-right: 10px;
+}
+
+button:hover {
+    background: #FFD700; 
+    transform: scale(1.05);
+    color: #121218;
+}
